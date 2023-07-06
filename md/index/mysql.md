@@ -53,4 +53,4 @@
 [function]: https://fgq233.github.io/md/mysql/function
 [procedure]: https://fgq233.github.io/md/mysql/procedure
 [handler_cursor]: https://fgq233.github.io/md/mysql/handler_cursor
-[sql]:
+[sql]:https://chenglid.github.io/md/mysql/sql

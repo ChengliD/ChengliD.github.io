@@ -18,7 +18,7 @@
 
 &emsp;&emsp;3、MySQL数据库的SQL语句不区分大小写，关键字建议使用大写
 
-&emsp;&emsp;4、注释：  
+&emsp;&emsp;4、注释:
 
 &emsp;&emsp;&emsp;单行注释：-- 注释内容  或 #注释内容（MySQL特有)
 

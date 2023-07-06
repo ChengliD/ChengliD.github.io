@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cffdb43e-481e-4a4d-8e9b-cd1dd2076ba7" name="Changes" comment="Merge remote-tracking branch 'origin/main'">
-      <change afterPath="$PROJECT_DIR$/md/mysql/sql.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/md/blog.md" beforeDir="false" afterPath="$PROJECT_DIR$/md/blog.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/md/index/mysql.md" beforeDir="false" afterPath="$PROJECT_DIR$/md/index/mysql.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/md/mysql/sql.md" beforeDir="false" afterPath="$PROJECT_DIR$/md/mysql/sql.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1688634104812</updated>
-      <workItem from="1688634107630" duration="5092000" />
+      <workItem from="1688634107630" duration="5613000" />
     </task>
     <task id="LOCAL-00001" summary="变更">
       <created>1688634262080</created>
@@ -118,7 +117,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688649295157</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1688650850203</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1688650850203</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1688650890010</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1688650890010</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +149,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="变更" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;index.html" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
