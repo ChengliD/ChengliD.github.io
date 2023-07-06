@@ -3,7 +3,7 @@
 * [Java设计模式][mode]           
 * [Oracle][oracle]
 * [MySQL][mysql]
-* [MySQL][mysql-dcl]
+* [MySQL-dcl][mysql-dcl]
 * [JS][js]
 * [Vue][vueHtml]                      [~][vueMd]
 * Androida

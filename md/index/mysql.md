@@ -20,7 +20,7 @@
 20. [MyCat 分片规则][mycat4]
 21. [MyCat 读写分离][mycat5]
 22. [常用命令][common]
-23. [MySQL概述]
+23. [MySQL概述][overview]
 24. [SQL][sql]
 25. [函数]
 26. [约束]
@@ -53,4 +53,5 @@
 [function]: https://fgq233.github.io/md/mysql/function
 [procedure]: https://fgq233.github.io/md/mysql/procedure
 [handler_cursor]: https://fgq233.github.io/md/mysql/handler_cursor
+[overview]:https://chenglid.github.io/md/mysql/overview
 [sql]:https://chenglid.github.io/md/mysql/sql

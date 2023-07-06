@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cffdb43e-481e-4a4d-8e9b-cd1dd2076ba7" name="Changes" comment="Merge remote-tracking branch 'origin/main'">
-      <change beforePath="$PROJECT_DIR$/md/blog.md" beforeDir="false" afterPath="$PROJECT_DIR$/md/blog.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/index/mysql.md" beforeDir="false" afterPath="$PROJECT_DIR$/md/index/mysql.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/md/mysql/overview.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/md/mysql/sql.md" beforeDir="false" afterPath="$PROJECT_DIR$/md/mysql/sql.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +31,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/chenglid.github.io",
+    "last_opened_file_path": "F:/chenglid.github.io/md/mysql",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -40,6 +40,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\chenglid.github.io\md\mysql" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\chenglid.github.io\md\mysql" />
     </key>
@@ -52,7 +55,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1688634104812</updated>
-      <workItem from="1688634107630" duration="5613000" />
+      <workItem from="1688634107630" duration="5901000" />
+      <workItem from="1688655720105" duration="1356000" />
     </task>
     <task id="LOCAL-00001" summary="变更">
       <created>1688634262080</created>
@@ -131,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688650890010</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1688651116233</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1688651116233</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

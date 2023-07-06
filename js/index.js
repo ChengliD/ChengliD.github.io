@@ -2,7 +2,7 @@ function clickBlog() {
     let d = new Date();
     let r = d.getFullYear() + (d.getMonth() + 1) + d.getDate();
     let s = Encrypt(r);
-    let ret = prompt('播主帅不帅', '帅');
+    let ret = prompt('博主帅不帅', '帅');
     // if(ret !== null && ret === Decrypt(s)) {
         window.location.href = "https://chenglid.github.io/md/blog";
     // }

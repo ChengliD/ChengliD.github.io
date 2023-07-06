@@ -1,34 +1,20 @@
-# <Central>MySQL：基础篇</Central>
+# <Central>SQL</Central>
+&emsp;&emsp;全称StructuredQuery Language，结构化查询语言。操作关系型数据库的编程语言，定义了一套操作关系型数据库统一标准。
 
-## 1、MySQL概述
+## 1、SQL通用语法
 
-### &emsp;1.1、数据库相关概念
+&emsp;1）SQL语句可以单行或多行书写，以分号结尾
 
-### &emsp;1.2、MySQL数据库
+&emsp;2）SQL语句可以使用空格/缩进来增强语句的可读性
 
-## 2、SQL
+&emsp;3）MySQL数据库的SQL语句不区分大小写，关键字建议使用大写
 
-&emsp;全称StructuredQuery Language，结构化查询语言。操作关系型数据库的编程语言，定义了一套操作关系型数据库统一标准。
+&emsp;4）注释:
 
-### &emsp;2.1、SQL通用语法
+&emsp;&emsp;单行注释：-- 注释内容  或 #注释内容（MySQL特有)
 
-&emsp;&emsp;1、SQL语句可以单行或多行书写，以分号结尾
-
-&emsp;&emsp;2、SQL语句可以使用空格/缩进来增强语句的可读性
-
-&emsp;&emsp;3、MySQL数据库的SQL语句不区分大小写，关键字建议使用大写
-
-&emsp;&emsp;4、注释:
-
-&emsp;&emsp;&emsp;单行注释：-- 注释内容  或 #注释内容（MySQL特有)
-
-&emsp;&emsp;&emsp;多行注释：/*
-
-​							注释内容 
-
-​							*/
-
-### 2.2、SQL分类
+&emsp;&emsp;多行注释：/*注释内容*/
+## 2、SQL分类
 
 &emsp;SQL语句，根据其功能，主要分为四类：
 
@@ -39,53 +25,52 @@
 | DQL | Data Query Language        | 数据查询语言，用来查询数据库中表的记录                 |
 | DCL | Data Control Language      | 数据控制语言，用来创建数据库用户、控制数据库的访问权限 |
 
-### 2.3、DDL
+## 3、DDL
 
-#### &emsp;2.3.1、数据库操作
+### &emsp;3.1、数据库操作
 
-##### &emsp;&emsp;1）查询所有数据库
+#### &emsp;&emsp;1）查询所有数据库
 
 ```sql
 show databases;
 ```
 
-##### &emsp;&emsp;2）创建数据库
+#### &emsp;&emsp;2）创建数据库
 
 ```sql
 create database [if not exists] 数据库名 [default charset 字符集] [collate 排序规则];
 ```
+&emsp;&emsp;&emsp;说明：字符集一般使用utf8mb4，本文所有的[...]中均为可选参数
 
-​			说明：字符集一般使用utf8mb4，本文所有的[...]中均为可选参数
-
-##### &emsp;&emsp;3）删除数据库
+#### &emsp;&emsp;3）删除数据库
 
 ```sql
 drop database[if exists] 数据库名;
 ```
 
-##### &emsp;&emsp;4）使用数据库
+#### &emsp;&emsp;4）使用数据库
 
 ```sql
 use 数据库名;
 ```
 
-##### &emsp;&emsp;5）查询当前数据库
+#### &emsp;&emsp;5）查询当前数据库
 
 ```sql
 select database();
 ```
 
-#### &emsp;2.3.2、表操作
+### &emsp;3.2、表操作
 
-##### &emsp;&emsp;2.3.2.1、查询创建
+#### &emsp;&emsp;3.2.1、查询创建
 
-###### &emsp;&emsp;&emsp;1）查询当前数据库所有表
+##### &emsp;&emsp;&emsp;1）查询当前数据库所有表
 
 ```sql
 show tables;
 ```
 
-###### &emsp;&emsp;&emsp;2）创建表结构
+##### &emsp;&emsp;&emsp;2）创建表结构
 
 ```sql
 CREATE TABLE 表名(
@@ -97,21 +82,21 @@ CREATE TABLE 表名(
 ) [COMMENT表注释];
 ```
 
-###### &emsp;&emsp;&emsp;3）查看指定表结构
+##### &emsp;&emsp;&emsp;3）查看指定表结构
 
 ```sql
 desc 表名
 ```
 
-###### &emsp;&emsp;&emsp;4）查询指定表的建表语句
+##### &emsp;&emsp;&emsp;4）查询指定表的建表语句
 
 ```sql
 show create table 表名
 ```
 
-##### &emsp;&emsp;2.3.2.2、数据类型
+#### &emsp;&emsp;3.2.2、数据类型
 
-###### &emsp;&emsp;&emsp;1）数值类型
+##### &emsp;&emsp;&emsp;1）数值类型
 
 | 类型        | 大小  | 有符号（SIGNED）范围                                | 无符号（UNSIGNED）范围                                | 描述               |
 | ----------- | ----- | --------------------------------------------------- | ----------------------------------------------------- | ------------------ |
@@ -124,7 +109,7 @@ show create table 表名
 | DOUBLE      | 1byte | (-1.7976931348623157E+308，1.7976931348623157E+308) | 0和(2.2250738585072014E-308，1.7976931348623157E+308) | 双精度浮点数值     |
 | DECIMAL     |       | 依赖于M(精度)和D(标度)的值                          | 依赖于M(精度)和D(标度)的值                            | 小数值(精确定点数) |
 
-###### &emsp;&emsp;&emsp;2）字符串类型
+##### &emsp;&emsp;&emsp;2）字符串类型
 
 | 类型        | 大小                  | 描述                         |
 | ----------- | --------------------- | ---------------------------- |
@@ -139,7 +124,7 @@ show create table 表名
 | LONGBLOB    | 0-4 294 967 295 bytes | 二进制形式的极大文本数据     |
 | LONGTEXT    | 0-4 294 967 295 bytes | 极大文本数据                 |
 
-###### &emsp;&emsp;&emsp;3）日期时间
+##### &emsp;&emsp;&emsp;3）日期时间
 
 | 类型      | 大小 | 范围                                     | 格式               | 描述                     |
 | --------- | ---- | ---------------------------------------- | ------------------ | ------------------------ |
@@ -149,64 +134,49 @@ show create table 表名
 | DATETIME  | 8    | 1000-01-01 00:00:00至9999-12-31 23:59:59 | YYYY-MM-DDHH:MM:SS | 混合日期和时间           |
 | TIMESTAMP | 4    | 1970-01-01 00:00:01至2038-01-19 03:14:07 | YYYY-MM-DDHH:MM:SS | 混合日期和时间值，时间戳 |
 
-##### &emsp;&emsp;2.3.2.3、修改
+#### &emsp;&emsp;3.2.3、修改
 
-###### &emsp;&emsp;&emsp;1）添加字段
+##### &emsp;&emsp;&emsp;1）添加字段
 
 ```sql
 alter table 表名 add 字段名 类型 [COMMENT 注释][约束];
 ```
 
-###### &emsp;&emsp;&emsp;2）修改数据类型
+##### &emsp;&emsp;&emsp;2）修改数据类型
 
 ```sql
 alter table 表名 modify 字段名 新数据类型;
 ```
 
-###### &emsp;&emsp;&emsp;3）修改字段名和字段类型
+##### &emsp;&emsp;&emsp;3）修改字段名和字段类型
 
 ```sql
 alter table 表名 change 旧字段名 新字段名 类型 [COMMENT 注释][约束];
 ```
 
-###### &emsp;&emsp;&emsp;4）删除字段
+##### &emsp;&emsp;&emsp;4）删除字段
 
 ```sql
 alter table 表名 drop 字段名;
 ```
 
-###### &emsp;&emsp;&emsp;5）修改表名
+##### &emsp;&emsp;&emsp;5）修改表名
 
 ```sql
 alter table 表名 rename to 新表名;
 ```
 
-##### &emsp;&emsp;2.3.2.4删除
+#### &emsp;&emsp;3.2.4、删除
 
-###### &emsp;&emsp;&emsp;1）删除表
+##### &emsp;&emsp;&emsp;1）删除表
 
 ```sql
 drop table[if exists] 表名;
 ```
 
-###### &emsp;&emsp;&emsp;2）删除指定表，并重新创建
+##### &emsp;&emsp;&emsp;2）删除指定表，并重新创建
 
 ```sql
 truncate table 表名;
 ```
-
-​				用该语句删除重建后，索引仍然是保留的
-
-### 2.4、DML
-
-### 2.5、DQL
-
-### 2.6、DCL
-
-## 3、函数
-
-## 4、约束
-
-## 5、多表查询
-
-## 6、事务
+&emsp;&emsp;&emsp;用该语句删除重建后，索引仍然是保留的
