@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/plugin/font1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/music.css">
+    <title>范老师的Music</title>
+</head>
+
+<body onload="onloadFun();">
+<div class="main_div">
+    <div class="music_container">
+        <h4 id="title"></h4>
+        <div class="img_container">
+            <img src="../imgs/003-min.jpg" alt="music background">
+        </div>
+        <audio id="audio"></audio>
+
+        <!-- Progress bar -->
+        <div class="progressbar_container" id="progressbar_container">
+            <div class="progress_duration_meter">
+                <div id="current_time">00:00</div>
+                <div id="duration">00:00</div>
+            </div>
+            <div class="progress_div" id="progress_div">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="music_controls">
+            <i class="fa fa-volume-down" onclick="muteAudio();" id="mute" title="静音"></i>
+            <i class="fa fa-backward" onclick="prevSong()" title="前一首"></i>
+            <i class="fa fa-play main_button" onclick="toggleStatus()" id="play" title="播放"></i>
+            <i class="fa fa-forward" onclick="nextSong()" title="后一首"></i>
+            <i class="fa fa-retweet" onclick="changMode();" id="loop" title="切换歌单"></i>
+        </div>
+    </div>
+</div>
+
+<script src="../js/musicList.js"></script>
+<script src="../js/music.js"></script>
+</body>
+
+</html>
