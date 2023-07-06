@@ -23,4 +23,4 @@
 [mode]: https://fgq233.github.io/md/index/mode
 [vueHtml]: https://fgq233.github.io/html/blog?key=vue
 [vueMd]: https://fgq233.github.io/md/index/vue
-[mysql-dcl]:https://fgq233.github.io/md/index/vue
+[mysql-dcl]:https://fgq233.github.io/md/index/mysql
