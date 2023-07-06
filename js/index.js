@@ -4,7 +4,7 @@ function clickBlog() {
     let s = Encrypt(r);
     let ret = prompt('范老师帅不帅', '帅');
     // if(ret !== null && ret === Decrypt(s)) {
-        window.location.href = "https://fgq233.github.io/md/blog";
+        window.location.href = "https://chenglid.github.io/md/blog";
     // }
     // if(ret !== null && ret === '帅') {
     //     window.location.href = "https://fgq233.github.io/md/blog";
