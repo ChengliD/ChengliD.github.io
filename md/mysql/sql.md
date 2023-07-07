@@ -180,3 +180,9 @@ drop table[if exists] 表名;
 truncate table 表名;
 ```
 &emsp;&emsp;&emsp;用该语句删除重建后，索引仍然是保留的
+
+## 4、DML
+
+## 5、DQL
+
+## 6、DCL
