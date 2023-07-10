@@ -200,14 +200,14 @@ instrt into 表名(字段1,字段2,...) values (值1,值2,...);
 #### &emsp;&emsp;2）给全部字段添加数据
 
 ```sql
-instrt into 表名 values (值1,值2,...);
+insert into 表名 values (值1,值2,...);
 ```
 
 #### &emsp;&emsp;3）批量添加数据
 
 ```sql
-instrt into 表名(字段1,字段2,...) values (值1,值2,...),(值1,值2,...),(值1,值2,...);
-instrt into 表名 values (值1,值2,...),(值1,值2,...),(值1,值2,...);
+insert into 表名(字段1,字段2,...) values (值1,值2,...),(值1,值2,...),(值1,值2,...);
+insert into 表名 values (值1,值2,...),(值1,值2,...),(值1,值2,...);
 ```
 
 &emsp;&emsp;注意：
