@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cffdb43e-481e-4a4d-8e9b-cd1dd2076ba7" name="Changes" comment="Merge remote-tracking branch 'origin/main'" />
+    <list default="true" id="cffdb43e-481e-4a4d-8e9b-cd1dd2076ba7" name="Changes" comment="Merge remote-tracking branch 'origin/main'">
+      <change afterPath="$PROJECT_DIR$/imgs/mysql/sql1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/md/mysql/sql.md" beforeDir="false" afterPath="$PROJECT_DIR$/md/mysql/sql.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +31,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/chenglid.github.io/imgs/vue",
+    "last_opened_file_path": "F:/chenglid.github.io/imgs/mysql",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -37,12 +41,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\chenglid.github.io\imgs\mysql" />
       <recent name="F:\chenglid.github.io\imgs\vue" />
       <recent name="F:\chenglid.github.io\md\mysql" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\chenglid.github.io\imgs" />
+      <recent name="F:\chenglid.github.io\imgs\mysql1" />
       <recent name="F:\chenglid.github.io\md\mysql" />
+      <recent name="F:\chenglid.github.io\imgs" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -55,7 +61,8 @@
       <updated>1688634104812</updated>
       <workItem from="1688634107630" duration="5901000" />
       <workItem from="1688655720105" duration="1543000" />
-      <workItem from="1688736942399" duration="2462000" />
+      <workItem from="1688736942399" duration="4208000" />
+      <workItem from="1688971231245" duration="888000" />
     </task>
     <task id="LOCAL-00001" summary="变更">
       <created>1688634262080</created>
@@ -183,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688738638009</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1688739512201</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1688739512201</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,4 +1,4 @@
-# <Central>SQL</Central>
+# SQL
 &emsp;&emsp;全称StructuredQuery Language，结构化查询语言。操作关系型数据库的编程语言，定义了一套操作关系型数据库统一标准。
 
 ## 1、SQL通用语法
@@ -13,7 +13,11 @@
 
 &emsp;&emsp;单行注释：-- 注释内容  或 #注释内容（MySQL特有)
 
-&emsp;&emsp;多行注释：/*注释内容*/
+&emsp;&emsp;多行注释：/*
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;注释内容
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;*/
 ## 2、SQL分类
 
 &emsp;SQL语句，根据其功能，主要分为四类：
@@ -182,7 +186,277 @@ truncate table 表名;
 &emsp;&emsp;&emsp;用该语句删除重建后，索引仍然是保留的
 
 ## 4、DML
+&emsp;&emsp;DML英文全称是Data Manipulation Language(数据操作语言)，用来对数据库中表的数据记录进
+行增、删、改操作。
+
+### &emsp;4.1、添加数据
+
+#### &emsp;&emsp;1）给指定字段添加数据
+
+```sql
+instrt into 表名(字段1,字段2,...) values (值1,值2,...);
+```
+
+#### &emsp;&emsp;2）给全部字段添加数据
+
+```sql
+instrt into 表名 values (值1,值2,...);
+```
+
+#### &emsp;&emsp;3）批量添加数据
+
+```sql
+instrt into 表名(字段1,字段2,...) values (值1,值2,...),(值1,值2,...),(值1,值2,...);
+instrt into 表名 values (值1,值2,...),(值1,值2,...),(值1,值2,...);
+```
+
+&emsp;&emsp;注意：
+
+&emsp;&emsp;&emsp;• 插入数据时，指定的字段顺序需要与值的顺序是一一对应的
+
+&emsp;&emsp;&emsp;• 字符串和日期型数据应该包含在引号中
+
+&emsp;&emsp;&emsp;• 插入的数据大小，应该在字段的规定范围内
+
+### &emsp;4.2、修改数据
+
+```sql
+update 表名 set 字段名1 = 值1, 字段名2 = 值2,... where	
+```
+
+&emsp;&emsp;注意：修改语句的条件可以有，也可以没有，如果没有条件，则会修改整张表的所有数据。
+
+### &emsp;4.3、删除数据
+
+```sql
+delete from 表名 [where 条件]
+```
+
+
 
 ## 5、DQL
 
+DQL英文全称是Data Query Language(数据查询语言)，数据查询语言，用来查询数据库中表的记
+录。
+
+### &emsp;5.1、基本查询
+
+#### &emsp;&emsp;1）查询多个字段
+
+```sql
+select 字段1,字段2,字段3,... from 表名;
+select * from 表名
+```
+
+#### &emsp;&emsp;2）字段设置别名
+
+```sql
+select 字段1[as 别名1],字段2 [AS 别名2]...from 表名;
+select 字段1[别名1],字段2[别名2 ]...from 表名;
+```
+
+#### &emsp;&emsp;3）去除重复记录
+
+```sql
+select distinct 字段列表 from 表名;
+```
+
+### &emsp;5.2、条件查询
+
+#### &emsp;&emsp;1）语法
+
+```sql
+select 字段列表 from 表名 where 条件列表
+```
+
+#### &emsp;&emsp;2）条件
+
+&emsp;&emsp;常见的比较运算符如下：
+
+| 比较运算符          | 功能                                     |
+| ------------------- | ---------------------------------------- |
+| >                   | 大于                                     |
+| >=                  | 大于等于                                 |
+| <                   | 小于                                     |
+| <=                  | 小于等于                                 |
+| =                   | 等于                                     |
+| <> 或 !=            | 不等于                                   |
+| between ... and ... | 在某个范围之内(含最小、最大值)           |
+| in(...)             | 在in之后的列表中的值，多选一             |
+| like(占位符)        | 模糊匹配(_匹配单个字符, %匹配任意个字符) |
+| is null             | 是NULL                                   |
+
+&emsp;&emsp;常见的逻辑运算符如下：
+
+| 逻辑运算符 | 功能                        |
+| ---------- | --------------------------- |
+| and 或 &&  | 并且 (多个条件同时成立)     |
+| or 或 \|\| | 或者 (多个条件任意一个成立) |
+| not 或 ！  | 非 , 不是                   |
+
+### &emsp;5.3、聚合函数
+
+#### &emsp;&emsp; 1）介绍
+
+&emsp;&emsp;&emsp;&emsp;将一列数据作为一个整体，进行纵向计算。
+
+#### &emsp;&emsp;2）常见的聚合函数
+
+| 函数  | 功能     |
+| ----- | -------- |
+| count | 统计数量 |
+| max   | 最大值   |
+| min   | 最小值   |
+| avg   | 平均值   |
+| sum   | 求和     |
+
+#### &emsp;&emsp; 3）语法
+
+```sql
+select 聚合函数(字段列表) from 表名
+```
+
+&emsp;&emsp;&emsp;注意：null值是不参与所有聚合函数运算的
+
+### &emsp;5.4、分组查询
+
+#### &emsp;&emsp;1）语法
+
+```sql
+select 字段列表 from 表名 [where 条件] group by 分组字段名 [having 分组后过滤条件]
+```
+
+#### &emsp;&emsp;2）where和having的区别
+
+&emsp;&emsp;1、执行时机不同：where是分组之前进行过滤，不满足where条件，不参与分组；而having是分组
+之后对结果进行过滤。
+
+&emsp;&emsp;2、判断条件不同：where不能对聚合函数进行判断，而having可以。
+
+&emsp;&emsp;注意事项：
+
+&emsp;&emsp;&emsp;• 分组之后，查询的字段一般为聚合函数和分组字段，查询其他字段无任何意义。
+
+&emsp;&emsp;&emsp;• 执行顺序: where > 聚合函数 > having 。
+
+&emsp;&emsp;&emsp;• 支持多字段分组, 具体语法为 : group by columnA,columnB
+
+### &emsp;5.5、排序查询
+
+#### &emsp;&emsp;1）语法
+
+```sql
+select 字段列表 from 表名 order by 字段1 排序方式1 , 字段2 排序方式2;
+```
+
+#### &emsp;&emsp;2）排序方式
+
+ASC：升序
+
+DESC：降序
+
+注意事项：
+
+• 如果是升序, 可以不指定排序方式ASC ;
+
+• 如果是多字段排序，当第一个字段值相同时，才会根据第二个字段进行排序 ;
+
+### &emsp;5.6、分页查询
+
+#### &emsp;&emsp;1）语法
+
+```sql
+select 字段列表 from 表名 limit 起始索引,查询记录数;
+```
+
+&emsp;&emsp;注意事项:
+
+&emsp;&emsp;&emsp;• 起始索引从0开始，起始索引 = （查询页码 - 1）* 每页显示记录数。
+
+&emsp;&emsp;&emsp;• 分页查询是数据库的方言，不同的数据库有不同的实现，MySQL中是LIMIT。
+
+&emsp;&emsp;&emsp;• 如果查询的是第一页数据，起始索引可以省略，直接简写为 limit 10。
+
+### &emsp;5.7、执行顺序
+
+![](https://chenglid.github.io/imgs/mysql/sql1.png)
+
 ## 6、DCL
+
+DCL英文全称是Data Control Language(数据控制语言)，用来管理数据库用户、控制数据库的访
+问权限。
+
+### 6.1、管理用户
+
+1）查询用户
+
+```sql
+select * from mysql.user;
+```
+
+Host代表当前用户访问的主机, 如果为localhost, 仅代表只能够在当前本机访问，是不可以
+远程访问的。 User代表的是访问该数据库的用户名。在MySQL中需要通过Host和User来唯一标识一
+个用户。
+
+2）创建用户
+
+```sql
+create user '用户名'@'主机名' identified by '密码';
+```
+
+3）修改用户密码
+
+```sql
+alter user '用户名'@'主机名' identified with mysql_native_password by '新密码';
+```
+
+4）删除用户
+
+```sql
+drop uesr '用户名'@'主机名';
+```
+
+注意事项:
+
+• 在MySQL中需要通过用户名@主机名的方式，来唯一标识一个用户。
+
+• 主机名可以使用 % 通配。
+
+• 这类SQL开发人员操作的比较少，主要是DBA（ Database Administrator 数据库
+
+管理员）使用。
+
+### 6.2、权限控制
+
+| 权限                | 说明               |
+| ------------------- | ------------------ |
+| all，all provileges | 所有权限           |
+| select              | 查询数据           |
+| insert              | 插入数据           |
+| update              | 修改数据           |
+| delete              | 删除数据           |
+| alter               | 修改表             |
+| drop                | 删除数据库/表/视图 |
+| create              | 创建数据库/表      |
+
+#### 1）查询权限
+
+```sql
+show grants for '用户名'@'主机名';
+```
+
+#### 2）授予权限
+
+```sql
+show 权限列表 on 数据库名.表名 to '用户名'@'主机名';
+```
+
+#### 3）撤销权限
+
+```sql
+revoke 权限列表 on 数据库名.表名 from '用户名'@'主机名';
+```
+
+注意事项：
+• 多个权限之间，使用逗号分隔
+• 授权时， 数据库名和表名可以使用 * 进行通配，代表所有。
