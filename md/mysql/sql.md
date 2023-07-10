@@ -383,12 +383,12 @@ select 字段列表 from 表名 limit 起始索引,查询记录数;
 
 ## 6、DCL
 
-DCL英文全称是Data Control Language(数据控制语言)，用来管理数据库用户、控制数据库的访
+&emsp;&emsp;DCL英文全称是Data Control Language(数据控制语言)，用来管理数据库用户、控制数据库的访
 问权限。
 
 ### 6.1、管理用户
 
-1）查询用户
+#### &emsp;1）查询用户
 
 ```sql
 select * from mysql.user;
@@ -398,33 +398,29 @@ Host代表当前用户访问的主机, 如果为localhost, 仅代表只能够在
 远程访问的。 User代表的是访问该数据库的用户名。在MySQL中需要通过Host和User来唯一标识一
 个用户。
 
-2）创建用户
+#### &emsp;2）创建用户
 
 ```sql
 create user '用户名'@'主机名' identified by '密码';
 ```
 
-3）修改用户密码
+#### &emsp;3）修改用户密码
 
 ```sql
 alter user '用户名'@'主机名' identified with mysql_native_password by '新密码';
 ```
 
-4）删除用户
+#### &emsp;4）删除用户
 
 ```sql
 drop uesr '用户名'@'主机名';
 ```
 
-注意事项:
+&emsp;注意事项:
 
-• 在MySQL中需要通过用户名@主机名的方式，来唯一标识一个用户。
+&emsp;&emsp;• 在MySQL中需要通过用户名@主机名的方式，来唯一标识一个用户。
 
-• 主机名可以使用 % 通配。
-
-• 这类SQL开发人员操作的比较少，主要是DBA（ Database Administrator 数据库
-
-管理员）使用。
+&emsp;&emsp;• 主机名可以使用 % 通配。
 
 ### 6.2、权限控制
 
@@ -457,6 +453,8 @@ show 权限列表 on 数据库名.表名 to '用户名'@'主机名';
 revoke 权限列表 on 数据库名.表名 from '用户名'@'主机名';
 ```
 
-注意事项：
-• 多个权限之间，使用逗号分隔
-• 授权时， 数据库名和表名可以使用 * 进行通配，代表所有。
+&emsp;注意事项：
+
+&emsp;&emsp;• 多个权限之间，使用逗号分隔
+
+&emsp;&emsp;• 授权时， 数据库名和表名可以使用 * 进行通配，代表所有。
