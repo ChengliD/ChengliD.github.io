@@ -37,10 +37,10 @@
 
 ## 4、流程函数
 
-| 函数                                                       | 功能                                                     |
-| ---------------------------------------------------------- | -------------------------------------------------------- |
-| if(value,t,f)                                              | 如果value为true，则返回t，否则返回f                      |
-| ifnull(value1,value2)                                      | 如果value1不为空，返回value1，否则返回value2             |
-| case when [val1] then [res1] ...  else [default] end       | 如果val1为true，返回res1，...，否则返回default默认值     |
-| case [expr] when [val1] then [res1] ... else [default] end | 如果expr的值等于val1，返回res1，...否则返回default默认值 |
+| 函数                                                                                  | 功能                                                     |
+|-------------------------------------------------------------------------------------| -------------------------------------------------------- |
+| if(value,t,f)                                                                       | 如果value为true，则返回t，否则返回f                      |
+| ifnull(value1,value2)                                                               | 如果value1不为空，返回value1，否则返回value2             |
+| case when [val1] then [res1] when [val2] then [res2] ...  else [default] end        | 如果val1为true，返回res1，...，否则返回default默认值     |
+| case [expr] when [val1] then [res1] when [val2] then [res2]  ... else [default] end | 如果expr的值等于val1，返回res1，...否则返回default默认值 |
 
