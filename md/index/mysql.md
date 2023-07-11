@@ -21,4 +21,4 @@
 [mysql_overview]:https://chenglid.github.io/md/mysql/mysql_overview
 [sql]:https://chenglid.github.io/md/mysql/sql
 [function]:https://chenglid.github.io/md/mysql/function
-[constraint]:https://chenglid.github.io/ma/mysql/constraint
+[constraint]:https://chenglid.github.io/md/mysql/constraint
