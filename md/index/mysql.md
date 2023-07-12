@@ -3,7 +3,7 @@
 3. [函数][function]
 4. [约束][constraint]
 5. [多表查询][multi-table_query]
-6. [事务]
+6. [事务][affair]
 7. [存储引擎]
 8. [索引]
 9. [SQL优化]
@@ -23,3 +23,4 @@
 [function]:https://chenglid.github.io/md/mysql/function
 [constraint]:https://chenglid.github.io/md/mysql/constraint
 [multi-table_query]:https://chenglid.github.io/md/mysql/multi-table_query
+[affair]:https://chenglid.github.io/md/mysql/affair
