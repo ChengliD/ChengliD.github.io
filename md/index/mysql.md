@@ -4,7 +4,7 @@
 4. [约束][constraint]
 5. [多表查询][multi-table_query]
 6. [事务][affair]
-7. [存储引擎]
+7. [存储引擎][storage_engine]
 8. [索引]
 9. [SQL优化]
 10. [视图]
@@ -24,3 +24,4 @@
 [constraint]:https://chenglid.github.io/md/mysql/constraint
 [multi-table_query]:https://chenglid.github.io/md/mysql/multi-table_query
 [affair]:https://chenglid.github.io/md/mysql/affair
+[storage_engine]:https://chenglid.github.io/md/mysql/storage_engine
