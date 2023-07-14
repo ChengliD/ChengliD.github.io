@@ -2,7 +2,7 @@
 
 ## 1、MySQL体系结构
 
-![1689150102894](C:\Users\16047\Desktop\1689150102894.png)
+![](https://chenglid.github.io/imgs/mysql/storage_engine1.png)
 
 
 
@@ -65,7 +65,7 @@ show variables like 'innodb_file_per_table';
 
 #### &emsp;&emsp;4）逻辑存储结构
 
-![1689165769658](C:\Users\16047\Desktop\1689165769658.png)
+![](https://chenglid.github.io/imgs/mysql/storage_engine2.png)
 
 | 结构   | 功能                                                         |
 | ------ | ------------------------------------------------------------ |
