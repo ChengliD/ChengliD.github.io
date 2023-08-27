@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cffdb43e-481e-4a4d-8e9b-cd1dd2076ba7" name="Changes" comment="Merge remote-tracking branch 'origin/main'">
+      <change afterPath="$PROJECT_DIR$/md/git/git_overview.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/md/index/git.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/md/blog.md" beforeDir="false" afterPath="$PROJECT_DIR$/md/blog.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +32,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/java/Java/learning/javasepro&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/chenglid.github.io/md/git&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -39,6 +42,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\chenglid.github.io\md\git" />
+      <recent name="F:\chenglid.github.io\md\index" />
       <recent name="F:\chenglid.github.io\imgs\mysql" />
       <recent name="F:\chenglid.github.io\imgs\vue" />
       <recent name="F:\chenglid.github.io\md\mysql" />
@@ -71,6 +76,9 @@
       <workItem from="1689221597474" duration="705000" />
       <workItem from="1689298351561" duration="1208000" />
       <workItem from="1689596498199" duration="790000" />
+      <workItem from="1689668826817" duration="511000" />
+      <workItem from="1693109363515" duration="1573000" />
+      <workItem from="1693134559212" duration="971000" />
     </task>
     <task id="LOCAL-00001" summary="变更">
       <created>1688634262080</created>
@@ -303,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689596693589</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1689668952730</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1689668952730</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

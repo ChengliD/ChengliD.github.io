@@ -2,8 +2,8 @@
 * [Java中间件 & 框架][javaHtml]       [~][javaMd]
 * [Java设计模式][mode]           
 * [Oracle][oracle]
+* [Git][git]
 * [MySQL][mysql]
-* [MySQL-dcl][mysql-dcl]
 * [JS][js]
 * [Vue][vueHtml]                      [~][vueMd]
 * Androida
@@ -17,10 +17,10 @@
 [javaMd]: https://fgq233.github.io/md/index/java
 [js]: https://fgq233.github.io/md/index/js
 [oracle]: https://fgq233.github.io/md/index/oracle
-[mysql]: https://fgq233.github.io/md/index/mysql
 [win]: https://fgq233.github.io/md/index/win
 [linux]: https://fgq233.github.io/md/index/linux
 [mode]: https://fgq233.github.io/md/index/mode
 [vueHtml]: https://fgq233.github.io/html/blog?key=vue
 [vueMd]: https://fgq233.github.io/md/index/vue
-[mysql-dcl]:https://chenglid.github.io/md/index/mysql
+[mysql]:https://chenglid.github.io/md/index/mysql
+[git]:https://chenglid.github.io/md/index/git
