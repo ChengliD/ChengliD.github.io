@@ -1,10 +1,5 @@
 1. [HTML5基础][html5_basic]
+2. [标签][tag]
 
-
-[mysql_overview]:https://chenglid.github.io/md/mysql/mysql_overview
-[sql]:https://chenglid.github.io/md/mysql/sql
-[function]:https://chenglid.github.io/md/mysql/function
-[constraint]:https://chenglid.github.io/md/mysql/constraint
-[multi-table_query]:https://chenglid.github.io/md/mysql/multi-table_query
-[affair]:https://chenglid.github.io/md/mysql/affair
-[storage_engine]:https://chenglid.github.io/md/mysql/storage_engine
+[html5_basic]:https://chenglid.github.io/md/html5/html5_basic
+[tag]:https://chenglid.github.io/md/html5/tag
