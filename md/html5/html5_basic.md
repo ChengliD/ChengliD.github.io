@@ -58,7 +58,6 @@ body：网页主体，用来存放给用户看的信息，例如图片、文字
 ## 六、路径
 &emsp;&emsp;路径指的是查找文件时，从起点到终点经历的路线。
 
-
 &emsp;&emsp;路径分类：
 <br>
 &emsp;&emsp;&emsp;&emsp;相对路径：从当前文件位置出发查找目标文件
@@ -71,9 +70,9 @@ body：网页主体，用来存放给用户看的信息，例如图片、文字
 <br>
 &emsp;&emsp;&emsp;&emsp;绝对路径：从盘符出发查找目标文件
 <br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Windows 电脑盘符出发
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Windows 电脑盘符出发，Windows默认是\，其他系统是/，统一写为/
 <br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Mac 电脑从根目录出发
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Mac 电脑从根目录(/)出发
 
 
 
