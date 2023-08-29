@@ -2,6 +2,7 @@
 * [Java中间件 & 框架][javaHtml]       [~][javaMd]
 * [Java设计模式][mode]           
 * [Oracle][oracle]
+* [HTML5][html5]
 * [Git][git]
 * [MySQL][mysql]
 * [JS][js]
@@ -24,3 +25,4 @@
 [vueMd]: https://fgq233.github.io/md/index/vue
 [mysql]:https://chenglid.github.io/md/index/mysql
 [git]:https://chenglid.github.io/md/index/git
+[html5]:https://chenglid.github.io/md/index/html5
