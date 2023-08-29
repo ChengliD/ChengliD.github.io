@@ -56,7 +56,24 @@ body：网页主体，用来存放给用户看的信息，例如图片、文字
 &emsp;&emsp;<!--  内容   -- >注释标签用来在源文档中插入注释，注释不会在浏览器中显示。
 
 ## 六、路径
+&emsp;&emsp;路径指的是查找文件时，从起点到终点经历的路线。
 
+
+&emsp;&emsp;路径分类：
+<br>
+&emsp;&emsp;&emsp;&emsp;相对路径：从当前文件位置出发查找目标文件
+<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;/ 表示进入某个文件夹里面
+<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;. 表示当前文件所在文件夹
+<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;..表示当前文件的上一级文件
+<br>
+&emsp;&emsp;&emsp;&emsp;绝对路径：从盘符出发查找目标文件
+<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Windows 电脑盘符出发
+<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Mac 电脑从根目录出发
 
 
 
